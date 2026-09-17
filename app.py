@@ -1898,6 +1898,5 @@ Base de dados: AWS RDS PostgreSQL
 Modelos: scikit-learn (RF, SVR, KMeans)
 
 [Relatorio original](https://www.nature.com/articles/s41567-018-0107-y) 
-| [GitHub](https://github.com) 
-| [Colab Notebook](https://colab.research.google.com)
+| [GitHub](https://github.com/leo-lopes/Ants) 
 """)
