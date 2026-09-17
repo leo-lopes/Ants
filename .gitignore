@@ -1,0 +1,54 @@
+# =====================================================================
+# CREDENCIAIS — nunca comitar
+# =====================================================================
+# Ignora secrets.toml dentro de qualquer pasta .streamlit
+**/.streamlit/secrets.toml
+# Ou ignore qualquer secrets.toml
+secrets.toml
+*.pem
+*.key
+.env
+
+# secrets.toml.example PODE ser comitado (e so um modelo, sem segredos)
+!secrets.toml.example
+
+
+# =====================================================================
+# DADOS — grandes demais para o Git (ant_trajectories.csv tem ~85 MB;
+# o limite do GitHub e 100 MB por arquivo). Ficam no S3/RDS.
+# =====================================================================
+data/
+*.csv
+!requirements.txt
+
+
+# =====================================================================
+# MODELOS — baixados do S3 em runtime, nao precisam ir para o repo
+# =====================================================================
+models/
+models_cache/
+*.pt
+*.pth
+*.pkl
+
+
+# =====================================================================
+# Python
+# =====================================================================
+__pycache__/
+*.py[cod]
+*.egg-info/
+.venv/
+venv/
+env/
+.ipynb_checkpoints/
+
+
+# =====================================================================
+# Sistema / editor
+# =====================================================================
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
